@@ -26,6 +26,8 @@ Only available to the Google Africa Developer Scholarship: Cloud Track Learners
 - Deploy your app to the cluster
 - Expose your app to the Internet
 
+[Google Doc File with instructions](https://docs.google.com/document/d/1sOTuPKub6AHccOOXa4hDu3JzGw8K_9INnf3nFVyLyWQ/preview#)
+
 
 Let the ALC program philosophy guide you.
 Own your learning as individuals/groups.
