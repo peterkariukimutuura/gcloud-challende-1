@@ -58,7 +58,7 @@ class App extends Component {
     render(){
       return(
         <div className="container">
-          <h2>Google Africa Developer Scholarship Phase II</h2>
+          <h3>Google Africa Developer Scholarship Phase II</h3>
           <h4>Crud with React CLI</h4>
           <Users allUsers={this.state.users} pressEditBtn={this.pressEditBtn} updateUser={this.updateUser} pressDelete={this.pressDelete}/>
           <AddUser addUser={this.addUser}/>
