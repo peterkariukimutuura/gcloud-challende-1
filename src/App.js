@@ -1,26 +1,70 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React ,{Component} from 'react';
+import Users from './Users';
+import AddUser from './AddUser';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+
+    //Default dummy data
+    state = {
+      users:[
+        {name:'Travis Jackson',age:18, isEditing:false},
+        {name:'Linda Moorhouse',age:22,isEditing:false},
+        {name:'Jeffrey Delgado',age:22,isEditing:false}
+      ]
+    }
+
+    //newUser is received from AddUser js
+    addUser = (newUser)=>{
+      let users =[...this.state.users,newUser];
+      this.setState({
+        users
+      });
+    }
+
+    ///when press edit button
+    //(i) is received from Users js
+    pressEditBtn= (i)=>{
+      let users =this.state.users;
+      users[i].isEditing = true;
+      this.setState({
+        users
+      });
+    }
+
+    //(i ,name , age ) is received from Users.js
+    updateUser =(i,name,age)=>{
+      let users = this.state.users;
+      users[i].name = name;
+      users[i].age = age;
+      users[i].isEditing = false;
+
+      this.setState({
+        users
+      });
+
+    }
+
+    pressDelete = (i) =>{
+      let users = this.state.users.filter((u,index)=>{
+        return index!==i;
+      });
+      this.setState({
+        users
+      });
+
+    }
+
+    render(){
+      return(
+        <div className="container">
+          <h1>Crud with React CLI</h1>
+          <Users allUsers={this.state.users} pressEditBtn={this.pressEditBtn} updateUser={this.updateUser} pressDelete={this.pressDelete}/>
+          <AddUser addUser={this.addUser}/>
+        </div>
+      );
+    }
+
+
 }
-
 export default App;
