@@ -26,7 +26,7 @@ Only available to the Google Africa Developer Scholarship: Cloud Track Learners
 - Deploy your app to the cluster
 - Expose your app to the Internet
 
-```
+
 Let the ALC program philosophy guide you.
 Own your learning as individuals/groups.
 Hold yourself accountable.
@@ -35,11 +35,10 @@ Ask clear questions when stuck, either in groups or the general channels.
 
 Share your project
 This will be an individual project but you can ask questions on your PLG slack group, the challenge will officially end 22nd of October 2019.
-```
+
 
 #####		Next Steps on or before  23rd October 2019
 
-```
+
 Share your project with your teammates with details of your project so that they can give comments and feedback.
 Share what you have done with the world. Share your project (Links/Screenshots) on social media using #150DaysofALC4 #GoogleAfricaDeveloperScholarship and tag @Andela_ALC
-```
