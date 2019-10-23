@@ -10,6 +10,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
+    "dev": "echo This is the DEV script",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
