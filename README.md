@@ -44,3 +44,11 @@ This will be an individual project but you can ask questions on your PLG slack g
 
 Share your project with your teammates with details of your project so that they can give comments and feedback.
 Share what you have done with the world. Share your project (Links/Screenshots) on social media using #150DaysofALC4 #GoogleAfricaDeveloperScholarship and tag @Andela_ALC
+
+
+------------------
+# Installation procedure
+#### Run the following commands
+
+- npm install react-scripts --save
+- npm start

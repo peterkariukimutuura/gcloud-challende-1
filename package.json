@@ -9,6 +9,7 @@
     "react-dom": "^16.11.0"
   },
   "scripts": {
+    "start": "react-scripts start",
     "predeploy": "npm run build",
     "dev": "echo This is the DEV script",
     "build": "react-scripts build",
